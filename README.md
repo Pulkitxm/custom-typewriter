@@ -1,30 +1,67 @@
-# React + TypeScript + Vite
+# React Typewriter Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The React Typewriter component is a customizable and animated typing effect for your text. It emulates the classic typewriter style with options for speed, cursor appearance, and more.
 
-Currently, two official plugins are available:
+## Author
+[Pulkit](https://www.devpulkit.in/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+You can install the Typewriter component via npm:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+npm i custom-typewriter
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Usage
+Import the component in your React application:
+
+```
+import Typewriter from 'react-typewriter-component';
+
+const App = () => {
+  return (
+    <Typewriter
+      text="Hello, World!"
+      speed={5}
+      cursor={true}
+      blinkRate={3}
+      cursorChar="|"
+      color="black"
+      size="20"
+      onComplete={() => console.log('Typing complete!')}
+      hideOnComplete
+    />
+  );
+};
+```
+
+<center>
+  <img src="./src/assets/Preview.png" height="200">
+</center>
+
+## Props
+
+- `text`: The text to be typed.
+- `speed`: Typing speed, a number between 1 and 10.
+- `cursor`: Show or hide the blinking cursor.
+- `blinkRate`: Blinking rate of the cursor, a number between 1 and 10.
+- `cursorChar`: The character to be used as the cursor.
+- `color`: Text color.
+- `size`: Font size.
+- `onComplete`: Callback function triggered when typing is complete.
+- `loop`: Enable or disable looping of the typing animation.
+- `pauseOnHover`: Pause typing when the component is hovered.
+
+
+## Examples
+```
+<Typewriter text="Hello, World!" speed={5} cursor={true} />
+<Typewriter text="Customize me!" speed={8} cursor={false} color="blue" size="24" />
+<Typewriter text="Looping animation" speed={5} cursor={true} loop={true} />
+<Typewriter text="Pause on Hover" speed={5} cursor={true} pauseOnHover={true} />
+```
+
+Explore different configurations to bring your text to life!
+
+Feel free to enhance and customize the README based on any additional features or information you want to provide.
