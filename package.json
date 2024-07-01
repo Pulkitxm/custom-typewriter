@@ -1,7 +1,7 @@
 {
   "name": "custom-typewriter",
   "private": false,
-  "version": "0.0.8",
+  "version": "0.0.1",
   "description": "The React Typewriter component is a customizable and animated typing effect for your text. It emulates the classic typewriter style with options for speed, cursor appearance, and more.",
   "type": "module",
   "main": "dist/index.umd.js",

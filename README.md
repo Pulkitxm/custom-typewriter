@@ -3,6 +3,7 @@
 The React Typewriter component is a customizable and animated typing effect for your text. It emulates the classic typewriter style with options for speed, cursor appearance, and more.
 
 ## Author
+
 [Pulkit](https://www.devpulkit.in/)
 
 ## Installation
@@ -14,6 +15,7 @@ npm i custom-typewriter
 ```
 
 ## Usage
+
 Import the component in your React application:
 
 ```
@@ -36,9 +38,7 @@ const App = () => {
 };
 ```
 
-<center>
-  <img src="./src/assets/Preview.png" height="200">
-</center>
+<img src="./src/assets/Preview.png" height="200">
 
 ## Props
 
@@ -53,8 +53,8 @@ const App = () => {
 - `loop`: Enable or disable looping of the typing animation.
 - `pauseOnHover`: Pause typing when the component is hovered.
 
-
 ## Examples
+
 ```
 <Typewriter text="Hello, World!" speed={5} cursor={true} />
 <Typewriter text="Customize me!" speed={8} cursor={false} color="blue" size="24" />
