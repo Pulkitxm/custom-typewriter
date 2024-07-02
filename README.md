@@ -11,7 +11,7 @@ The React Typewriter component is a customizable and animated typing effect for 
 You can install the Typewriter component via npm:
 
 ```
-npm i custom-typewriter
+npm i react-custom-typewriter
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ npm i custom-typewriter
 Import the component in your React application:
 
 ```
-import Typewriter from 'react-typewriter-component';
+import Typewriter from 'react-custom-typewriter';
 
 const App = () => {
   return (
